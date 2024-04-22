@@ -1,0 +1,385 @@
+
+
+:root{
+   
+   --cor-de-fundo_body: #F5F5F5;
+   --cor-de-link: #000;
+   --cor-de-fondo: #dcdcdc;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo_body) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+
+/*Sección Menu*/
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px; 
+}
+.menu__logo {
+    margin-right: 20px; 
+    padding:30px;
+    margin: 50px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+    height: 80px;
+    background-color: var(--cor-de-fondo);
+
+}
+
+.menu__header {
+    margin-right: auto;
+    margin: 50px;
+}
+.menu__nav {
+    margin-left: auto;
+}
+.menu__list {
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    justify-self: center;
+
+}
+.menu__list__item {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: center;
+    color: var(--cor-de-link);
+    font-weight: 600;
+}
+.menu__list__item:last-child {
+    margin-right: 0;
+}
+
+/*Sección Title*/
+
+section.title{
+    margin: 70px; 
+    margin-bottom: 10px; 
+    text-align: start;
+    font-size: 20px;
+}
+
+.title__div {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.title__profile {
+    max-width: 500px; 
+    margin-right: 200px;
+    margin-left: 2px; 
+    
+}
+
+.title__container {
+    flex-grow: 1;
+}
+
+.title__bio,
+.title__subsection {
+    margin-left: 25px; 
+    font-size: 40px;
+    margin-right: 10px;
+}
+.title__subsection{
+    font-size: 20px;
+    margin-right: 10px; 
+    text-align: start;
+}
+.title__subsection_title{
+    margin-left: 25px; 
+    font-size: 30px;
+    margin-right: 10px;
+    text-align: start;
+}
+.title__network {
+    list-style: none;
+    padding: 0;
+    margin: 7px;
+    text-align: center;
+
+}
+
+.title__network__item {
+    margin-bottom: 5px; 
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+.title__network__item a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.title__network__item img {
+    width: 10px; 
+    margin-left: 5px; 
+}
+
+
+/*Sección About*/
+
+section.about{
+    margin: 100px; 
+    margin-bottom: 10px; 
+    text-align: start;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+section.skills{
+    text-align: center; 
+    padding: 50px 0; 
+    background-color:var(--cor-de-fondo);
+
+
+}
+.skills__title{
+    text-align: center;
+    font-size: 32px; 
+    margin-bottom: 30px; 
+}
+.skills__line{
+    justify-content: center;
+
+}
+.skills__box{
+    display: inline-block;
+    list-style: none;
+    padding: 1px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+}
+/*Sección Hobbies*/
+
+section.hobbies{
+    text-align: center; 
+    padding: 50px 0; 
+}
+.hobbies__title{
+    text-align: center;
+    font-size: 32px; 
+    margin-bottom: 30px; /
+}
+.hobbies__line{
+    justify-content: center;
+}
+.hobbies__box{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    text-align: center; 
+    padding: 50px 0; 
+    background-color: var(--cor-de-fondo);
+
+}
+.academic__title{
+    text-align: center;
+    font-size: 32px; 
+    margin-bottom: 30px; /
+}
+.academic__courses{
+    display: inline-block;
+    text-align: center;
+}
+.academic__courses__box{
+    display: inline-block;
+    justify-content: center;
+    padding: 40px;
+    margin: 40px;
+}
+
+/* experiencia*/
+
+.experience {
+    text-align: center; 
+    padding: 50px 0; 
+    
+}
+
+.experience__section__title {
+    font-size: 32px; 
+    margin-bottom: 30px; 
+}
+
+.experience__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.experience__box {
+    margin: 0 20px 40px; 
+    padding: 20px; 
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+    max-width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.experience__img {
+    max-width: 100%; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+.experience__title {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.experience__text {
+    font-style: italic; 
+    margin-bottom: 20px; 
+}
+
+.experience__button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+
+/*Contacto*/
+.formcontato {
+    text-align: center; 
+    padding: 50px 0; 
+    background-color: var(--cor-de-fondo);
+}
+
+.formcontato__contacto {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.formcontato__title{
+    font-size: 32px; 
+    margin-bottom: 30px; 
+}
+.formcontato__text {
+    flex: 1; 
+    text-align: center; 
+    
+}
+.formcontato__subtext{
+    flex: 1; 
+    text-align: end; 
+    
+}
+.formcontato--derecha {
+    flex: 1; 
+    
+}
+
+.formcontato__img {
+    max-width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 px 8px rgba(8, 8, 8, 0.1); 
+    margin-left: 10px; 
+}
+
+/* Estilos para el formulario */
+.formcontato__form {
+    margin-top: 50px; 
+    text-align: center; 
+    margin-left: 50px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.formcontato__botao {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+.formcontato__botao:hover {
+    background-color: #03172b;
+}
+
+/*footeer*/
+
+section.footer{
+   text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .menu__list__item:not(:last-child) {
+        display: none;
+      
+      }
+    
+    .title__profile{
+        max-width: 200px; 
+        margin-right: 200px;
+        margin-left: 2px; 
+    }
+    .title__bio{
+        font-size: medium;
+    }
+    .title__subsection{
+        font-size: small;
+    }
+
+    .formcontato__title{
+        font-size: 22px; 
+        text-align: center;
+
+    }
+    .formcontato__subtext{
+        text-align: center;
+        display: none;
+    }
+  }
+
+
+
