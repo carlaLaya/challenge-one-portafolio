@@ -280,6 +280,14 @@ section.academic{
 
 
 /*Contacto*/
+    .mensaje-error {
+        color: rgb(49, 49, 233);
+        font-size: 15px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 5px; 
+    }
+
 .formcontato {
     text-align: center; 
     padding: 50px 0; 

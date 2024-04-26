@@ -256,13 +256,38 @@
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                    <form class="formcontato__form" name="form" data-formulario>
+                        <div class="formulario__campo">
+                            <input name="nombre" id="nombre" class="formcontato__input" type="text" minlength="3" required placeholder="Nombre"  />
+                            <span class="mensaje-error"></span>
+                        </div>
+                        <div class="formulario__campo">
+                            <input name="email" id="email" class="formcontato__input" type="email" minlength="4" required placeholder="E-mail" />
+                            <span class="mensaje-error"></span>
+                        </div>
+                        <div class="formulario__campo">
+                            <input name="asunto" id="asunto" class="formcontato__input" type="text" minlength="4" required placeholder="Asunto" />
+                            <span class="mensaje-error"></span>
+                        </div>
+                        <div class="formulario__campo">
+                        <textarea class="formcontato__textarea" required rows="5" cols="40" type="text" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <span class="mensaje-error"></span>
+                    </div>
+                        <div>
+                            <input value="Enviar " class="formcontato__botao" id="enviar" data-boton-enviar type="submit" />
+                            <span class="mensaje-error"></span>
+                          </div>
                     </form>
+                       
+                
+                       
+                       
+                      
+                       
+            
+                        
+                      </form>
+
                 </div>
                 <div class="formcontato--derecha">
                     <img class="formcontato__img" src="assets\contact_image.png">
@@ -278,6 +303,6 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="./js/main.js" type="module" ></script>
 </body>
 </html>
