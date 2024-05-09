@@ -83,7 +83,7 @@ section.title{
     margin: 70px; 
     margin-bottom: 10px; 
     text-align: start;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .title__div {
@@ -93,7 +93,7 @@ section.title{
 }
 
 .title__profile {
-    max-width: 400px; 
+    max-width: 200px; 
     margin-right: 200px;
     margin-left: 2px; 
     margin-top: 30px;
@@ -107,7 +107,7 @@ section.title{
 .title__bio,
 .title__subsection {
     margin-left: 25px; 
-    font-size: 40px;
+    font-size: 15px;
     margin-right: 10px;
 }
 .title__subsection{
@@ -116,29 +116,26 @@ section.title{
     text-align: start;
 }
 .title__subsection_title{
-    margin-left: 25px; 
+    margin-left: 30px; 
     font-size: 30px;
     margin-right: 10px;
     text-align: start;
 }
 .title__network {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
-    margin: 7px;
-    text-align: center;
-
 }
 
 .title__network__item {
-    margin-bottom: 5px; 
-    display: inline-block;
-    font-size: 15px;
-
+    margin: 0 10px;
 }
-
 .title__network__item a {
     text-decoration: none;
     color: #333; 
+    font-size: 15px;
+
 }
 
 .title__network__item img {
@@ -149,8 +146,9 @@ section.title{
 
 /*Sección About*/
 
+
 section.about{
-    margin: 100px; 
+    margin: 80px; 
     margin-bottom: 10px; 
     text-align: start;
     font-size: 20px;
@@ -365,7 +363,7 @@ section.academic{
 section.footer{
    text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .menu__list__item:not(:last-child) {
         display: none;
       
@@ -382,14 +380,27 @@ section.footer{
     .title__subsection{
         font-size: small;
     }
+   
+    .title__network {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    .title__network__item {
+            margin: 10px 0;
+        }
+    
 
     .formcontato__title{
-        font-size: 22px; 
+        font-size: 20px; 
         text-align: center;
 
     }
     .formcontato__subtext{
         text-align: center;
+        display: none;
+    }
+    .formcontato--derecha {
         display: none;
     }
   }
